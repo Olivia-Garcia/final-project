@@ -14,11 +14,48 @@ nav {
   padding: 14px 16px;
   text-decoration: none;
 }
+.container {
+  position: relative;
+  width:125px;
+  display: inline-block;
+}
 
-/* .links{
-  display:flex;
-  flex-flow:column wrap;
-} */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: tan;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 .topnav {
   overflow: hidden;
   background-color: #75ABBC;
@@ -48,8 +85,11 @@ img{
   object-fit:cover;
   border: 10px solid black;
   display:inline-block;
-
+  display:flex;
+justify-content: space-between;
 }
+
+
 <style>
 div {
   background-color:#FFF7F2;

@@ -20,7 +20,7 @@ font-size: 40px
 }
 
 h3 {
-  padding:0;
+  padding:40px;
 }
 
 
@@ -50,6 +50,11 @@ h3 {
 .mission{
   padding: 20px;
 }
+
+.carPrep {
+padding: 40px
+}'
+'
 img{
   height: 200px;
   width:200px;
